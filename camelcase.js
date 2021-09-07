@@ -3,8 +3,10 @@ function camelCase(str) {
 
 
     let spaces = str.replace(regex, ' ')
+    
+    let lower = spaces.toLowerCase()
 
-    let string = spaces.split(" ").join(' ')
+    let string = lower.split(" ").join(' ')
 
 
     return string.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
